@@ -1,0 +1,17 @@
+name: First Workflow
+# waits user to trigger workflow
+on: workflow_dispatch
+# work to be done by job keyword
+jobs:
+  # whatever name you wanna give it
+  first-job:
+    # tells it what env to run in
+    runs-on: ubuntu-latest
+    # what steps to run on this job, this one has 2 steps
+    steps:
+      # name of the step
+      - name: Print greeting
+      # action to run on this step
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run: echo "Done -  bye!"
