@@ -12,6 +12,8 @@ jobs:
       # name of the step
       - name: Print greeting
       # action to run on this step
-        run: echo "Hello World!"
+        run: | 
+          echo "Hello World!"
+          echo "Another log on the first step test"
       - name: Print Goodbye
         run: echo "Done -  bye!"
